@@ -1,6 +1,6 @@
 {
   "name": "ds18b20",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get temperature from the DS18B20 sensor connected to RPI",
   "author": "Christophe Hamerling <christophe.hamerling@gmail.com>",
   "homepage": "http://chamerling.github.io/ds18b20/",
