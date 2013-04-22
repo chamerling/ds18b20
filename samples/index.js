@@ -12,11 +12,11 @@ sensor.sensors(function(err, ids) {
   } else {
     console.log(ids);
     for (var id in ids) {
-      sensor.temperature(id, function(err, result) {
+      sensor.temperature(ids[id], function(err, result) {
         if (err) {
           console.log('Can not get temperature from sensor', err);
         } else {
-          console.log('Sensor ' + id + ' :', result);
+          console.log('Sensor ' + ids[id] + ' :', result);
         }
       });
     }
