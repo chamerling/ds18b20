@@ -1,0 +1,23 @@
+{
+  "name": "ds18b20",
+  "version": "0.0.1",
+  "description": "Get temperature from the DS18B20 sensor connected to RPI",
+  "author": "Christophe Hamerling <christophe.hamerling@gmail.com>",
+  "homepage": "http://github.com/chamerling/ds18b20",
+  "keywords": [
+    "raspberry",
+    "pi",
+    "sensor",
+    "iot",
+    "rpi",
+    "ds18b20"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chamerling/ds18b20.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://mths.be/mit"
+  }]
+}
