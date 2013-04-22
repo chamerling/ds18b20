@@ -7,7 +7,7 @@ Get sensor data from ds18b20 connected to the Raspberry (GPIO w1 pin).
 ### Drivers
 
 1-Wire drivers need to be loaded in order to create the connection between the physical sensor and the rPI.
-You can load them from the terminal:
+You can load them from the terminal (or from the bin/modules.sh script).
 
     sudo modprobe wire
     sudo modprobe w1-gpio
