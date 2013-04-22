@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Get temperature from the DS18B20 sensor connected to RPI",
   "author": "Christophe Hamerling <christophe.hamerling@gmail.com>",
-  "homepage": "http://github.com/chamerling/ds18b20",
+  "homepage": "http://chamerling.github.io/ds18b20/",
   "keywords": [
     "raspberry",
     "pi",
