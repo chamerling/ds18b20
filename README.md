@@ -4,6 +4,17 @@ Get sensor data from ds18b20 connected to the Raspberry (GPIO w1 pin).
 
 ## Usage
 
+### Drivers
+
+1-Wire drivers need to be loaded in order to create the connection between the physical sensor and the rPI.
+You can load them from the terminal:
+
+    sudo modprobe wire
+    sudo modprobe w1-gpio
+    sudo modprobe w1-therm
+
+### Code
+
     var sense = require('ds18b20');
     sense.sensors(function(err, ids) {
       // got sensor IDs ...
