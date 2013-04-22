@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ds18b20 by chamerling</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ds18b20</h1>
+        <p>ds18b20 sensor and the RPI</p>
+        <p class="view"><a href="https://github.com/chamerling/ds18b20">View the Project on GitHub <small>chamerling/ds18b20</small></a></p>
+        <ul>
+          <li><a href="https://github.com/chamerling/ds18b20/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/chamerling/ds18b20/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/chamerling/ds18b20">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>ds18b20</h1>
+
+<p>Get sensor data from ds18b20 connected to the Raspberry (GPIO w1 pin).</p>
+
+<h2>Usage</h2>
+
+<pre><code>var sense = require('ds18b20');
+sense.sensors(function(err, ids) {
+  // got sensor IDs ...
+});
+
+// ...
+
+sense.temperature('123456789', function(err, value) {
+  console.log('Current temperature is', value);
+});
+</code></pre>
+
+<h2>License</h2>
+
+<p>(The MIT License)</p>
+
+<p>Copyright (c) 2013 Christophe Hamerling &lt;<a href="mailto:christophe.hamerling@gmail.com">christophe.hamerling@gmail.com</a>&gt;</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/chamerling">chamerling</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
