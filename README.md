@@ -27,7 +27,7 @@ You can load them from the terminal (or from the bin/modules.sh script).
     });
 
     // ... or sync call
-    console.log('Current temperature is' + ds18b20.temperature('10-00080283a977'));
+    console.log('Current temperature is' + ds18b20.temperatureSync('10-00080283a977'));
 
 ## License
 
