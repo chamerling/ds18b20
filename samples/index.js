@@ -22,3 +22,15 @@ sensor.sensors(function(err, ids) {
     }
   }
 });
+
+sensor.sensors(function(err, ids) {
+  if (err) {
+    console.log('Can not get sensor IDs', err);
+  } else {
+    console.log(ids);
+    for (var id in ids) {
+        console.log('Sensor ' + ids[id] + ' :' + sensor.temperatureSync(ids[id]));
+      ;
+    }
+  }
+});
