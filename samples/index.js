@@ -30,7 +30,6 @@ sensor.sensors(function(err, ids) {
     console.log(ids);
     for (var id in ids) {
         console.log('Sensor ' + ids[id] + ' :' + sensor.temperatureSync(ids[id]));
-      ;
     }
   }
 });
