@@ -2,9 +2,13 @@
 
 [![badge](https://travis-ci.org/chamerling/ds18b20.svg?branch=master)](https://travis-ci.org/chamerling/ds18b20)
 
-Get sensor data from ds18b20 connected to the Raspberry (GPIO w1 pin).
+Get temperature from ds18b20 sensor connected to a Raspberry PI (GPIO w1 pin).
 
 ## Usage
+
+### Install
+
+    npm install ds18b20 --save
 
 ### Drivers
 
