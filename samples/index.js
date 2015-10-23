@@ -8,28 +8,29 @@ var sensor = require('..');
 
 sensor.sensors(function(err, ids) {
   if (err) {
-    console.log('Can not get sensor IDs', err);
-  } else {
-    console.log(ids);
-    for (var id in ids) {
-      sensor.temperature(ids[id], function(err, result) {
-        if (err) {
-          console.log('Can not get temperature from sensor', err);
-        } else {
-          console.log('Sensor ' + ids[id] + ' :', result);
-        }
-      });
-    }
+    return console.log('Can not get sensor IDs', err);
   }
+
+  console.log('Sensor IDs', ids);
+  ids.forEach(function(id) {
+    sensor.temperature(id, function(err, result) {
+      if (err) {
+        console.log('Can not get temperature from sensor', err);
+      } else {
+        console.log('Sensor ' + id + ' :', result);
+      }
+    });
+  });
 });
 
 sensor.sensors(function(err, ids) {
   if (err) {
-    console.log('Can not get sensor IDs', err);
-  } else {
-    console.log(ids);
-    for (var id in ids) {
-        console.log('Sensor ' + ids[id] + ' :' + sensor.temperatureSync(ids[id]));
-    }
+    return console.log('Can not get sensor IDs', err);
   }
+
+  console.log('Sensor IDs', ids);
+  ids.forEach(function(id) {
+    console.log('Sensor ' + id + ' (decimal) :' + sensor.temperatureSync(id));
+    console.log('Sensor ' + id + ' (hex) :' + sensor.temperatureSync(id, {parser: 'hex'}));
+  });
 });
