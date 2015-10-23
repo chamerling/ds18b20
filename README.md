@@ -1,5 +1,7 @@
 # ds18b20
 
+[![badge](https://travis-ci.org/chamerling/ds18b20?branch=master)](https://travis-ci.org/chamerling/ds18b20)
+
 Get sensor data from ds18b20 connected to the Raspberry (GPIO w1 pin).
 
 ## Usage
@@ -21,7 +23,6 @@ You can load them from the terminal (or from the bin/modules.sh script).
     });
 
     // ... async call
-
     ds18b20.temperature('10-00080283a977', function(err, value) {
       console.log('Current temperature is', value);
     });
@@ -36,11 +37,19 @@ You can load them from the terminal (or from the bin/modules.sh script).
 
     console.log('Current temperature is' + ds18b20.temperatureSync('10-00080283a977', {parser: 'hex'}));
 
+## Develop
+
+Install dev dependencies
+
+    npm install
+
+And check gulpfile...
+
 ## License
 
 (The MIT License)
 
-Copyright (c) 2013 Christophe Hamerling &lt;christophe.hamerling@gmail.com&gt;
+Copyright (c) 2013 - 2015 Christophe Hamerling &lt;christophe.hamerling@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
