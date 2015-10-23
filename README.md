@@ -1,5 +1,7 @@
 # ds18b20
 
+[![badge](https://travis-ci.org/chamerling/ds18b20?branch=master)](https://travis-ci.org/chamerling/ds18b20)
+
 Get sensor data from ds18b20 connected to the Raspberry (GPIO w1 pin).
 
 ## Usage
